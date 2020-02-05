@@ -13,7 +13,7 @@ public class Application extends Frame implements WindowListener {
 
 	public Application() {
 		super();
-
+		
 		Modele modl = new Modele();
 		Controleur ctrl = new Controleur(modl);
 		Vue vue = new Vue();
@@ -22,6 +22,7 @@ public class Application extends Frame implements WindowListener {
 		this.setTitle("tutoriel git");
 		this.add(vue);
 		this.pack();
+		this.setLocationRelativeTo(null);
 		this.setVisible(true);
 		addWindowListener(this);
 	}
