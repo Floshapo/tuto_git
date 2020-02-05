@@ -6,7 +6,8 @@ import java.util.Observable;
 import java.util.Observer;
 
 public class Vue extends Button implements Observer {
-	
+	private static final long serialVersionUID = 1L;
+
 	public Vue() {
 		super();
 		this.setLabel("0");
